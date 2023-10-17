@@ -1,0 +1,77 @@
+<div class="currency-converter">
+  <div class="conversion-box">
+    <input
+      type="number"
+      id="amount1"
+      placeholder="Введите сумму"
+      [(ngModel)]="amount1"
+      (ngModelChange)="convertCurrency()"
+    />
+    <select
+      id="currency1"
+      [(ngModel)]="currencyFrom"
+      (ngModelChange)="convertCurrency()"
+    >
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+  <div class="conversion-box">
+    <input
+      type="number"
+      id="amount2"
+      placeholder="Результат"
+      [(ngModel)]="amount2"
+      (ngModelChange)="resetConvert()"
+    />
+    <select
+      id="currency2"
+      [(ngModel)]="currencyTo"
+      (ngModelChange)="convertCurrency()"
+    >
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+      <option value="UAH">UAH</option>
+    </select>
+  </div>
+</div>
+
+<!-- <div class="currency-converter">
+  <div class="conversion-box">
+    <input
+      type="number"
+      id="amount1"
+      placeholder="Введите сумму"
+      [(ngModel)]="amount1"
+      (ngModelChange)="convertCurrency()"
+    />
+    <select
+      id="currency1"
+      [(ngModel)]="currencyFrom"
+      (ngModelChange)="convertCurrency()"
+    >
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+  <div class="conversion-box">
+    <input
+      type="number"
+      id="amount2"
+      placeholder="Результат"
+      [(ngModel)]="amount2"
+      (ngModelChange)="resetConvert()"
+    />
+    <select
+      id="currency2"
+      [(ngModel)]="currencyTo"
+      (ngModelChange)="convertCurrency()"
+    >
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+      <option value="UAH">UAH</option>
+    </select>
+  </div>
+</div> -->
