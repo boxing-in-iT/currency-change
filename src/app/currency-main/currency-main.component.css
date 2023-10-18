@@ -1,32 +1,24 @@
 .currency-converter {
-  background-color: #5c5470;
   display: flex;
-  justify-content: center;
-}
-
-.box {
-  width: 60%;
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  background-color: #b9b4c7;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .conversion-box {
   margin: 0 20px;
   padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 input[type="number"] {
-  width: 180px;
+  flex: 1;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 select {
@@ -35,29 +27,23 @@ select {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
+  margin-left: 10px;
 }
 
-/* .currency-converter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
+@media (max-width: 767px) {
+  .currency-converter {
+    flex-direction: column;
+  }
 
-.conversion-box {
-  margin: 0 20px;
-}
+  .conversion-box {
+    flex-direction: column;
+    text-align: center;
+  }
 
-input[type="number"] {
-  width: 200px;
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+  select {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
-
-select {
-  width: 80px;
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-} */
