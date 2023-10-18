@@ -1,61 +1,45 @@
 .currency-header {
-  background-color: #352f44;
   color: #fff;
-  padding: 20px;
   text-align: center;
 }
 
 h1 {
-  font-size: 36px; /* Increased font size for the heading */
+  font-size: 30px;
 }
 
 .currency-rates {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Increased margin for better spacing */
+  margin-top: 20px;
 }
 
 .currency-rate {
-  margin: 0 20px; /* Increased margin for better spacing */
-  font-size: 24px; /* Adjusted font size for rates */
-}
-
-.currency-name {
-  font-weight: bold;
-}
-
-.exchange-rate {
-  font-weight: bold;
-  font-size: 28px; /* Larger font size for rates */
-}
-
-/* .currency-header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
+  margin: 0 20px;
   font-size: 24px;
 }
 
-.currency-rates {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.currency-rate {
-  margin: 0 10px;
-  font-size: 18px;
-}
-
 .currency-name {
   font-weight: bold;
 }
 
 .exchange-rate {
   font-weight: bold;
-  font-size: 20px;
-} */
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .currency-rate {
+    margin: 0 20px;
+    font-size: 14px;
+  }
+
+  .exchange-rate {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
